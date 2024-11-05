@@ -1,0 +1,103 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Basic Styling */
+body {
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+header {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.name-heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    font-size: 32px;
+    color: white;
+}
+
+.name-heading .name {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.name-heading .title {
+    font-size: 18px;
+    color: #8c8c8c;
+}
+
+.name-heading img {
+    border-radius: 50%;
+}
+
+/* Profile, Contact, Education, and other sections */
+.box {
+    background-color: #fff;
+    margin: 20px auto;
+    padding: 25px;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 6px solid #1c87c9;
+}
+
+h2 {
+    color: #444;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Skills Toggle */
+#skillsSection {
+    display: none;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+#toggleCheckbox:checked + #toggleLabel + #skillsSection {
+    display: block;
+}
+
+#toggleLabel {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #333;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #1c1c1c;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box {
+        margin: 10px;
+        padding: 20px;
+    }
+    .name-heading {
+        font-size: 24px;
+    }
+}
